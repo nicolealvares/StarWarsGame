@@ -1,0 +1,50 @@
+﻿
+body {
+    padding: 25px;
+    background-color: gray;
+    background-size: 100% auto;
+    color: floralwhite;
+    background-image: url('https://starwarsblog.starwars.com/wp-content/uploads/2020/04/star-wars-backgrounds-14.jpg');
+}
+
+img {
+    width: 35%;
+    margin-bottom: 0;
+}
+
+h3 {
+    font-family: 'Times New Roman', cursive;
+}
+
+.card {
+    height: 250px;
+}
+
+.row {
+    margin: 25px auto;
+}
+
+.hidden {
+    display: none;
+}
+
+.card-action {
+    height: 25px;
+}
+
+#buttons button {
+    text-align: center;
+    margin: 10px auto;
+}
+
+#result {
+    margin: 15px;
+    text-align: center;
+    height: 100px, fit-content;
+    font-family: 'Times New Roman', cursive;
+}
+
+#newGameButton {
+    margin-top: 25px;
+    text-align: center;
+}
