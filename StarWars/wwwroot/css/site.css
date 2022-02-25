@@ -42,6 +42,7 @@ h3 {
     text-align: center;
     height: 100px, fit-content;
     font-family: 'Times New Roman', cursive;
+    font-size: 35px;
 }
 
 #newGameButton {

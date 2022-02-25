@@ -14,7 +14,6 @@ function getAPI() {
     return apiLink + a;
 };
 
-
 function newGame() {
 
     $('#result').empty();
@@ -40,6 +39,13 @@ function newGame() {
                 $('#charA').html("<span class='card-title'>" + playACharacter.name + "</span><p>Birth Year: " + playACharacter.birth_year + "</p><p>Height: " + playACharacter.height + "</p><p>Mass: " + playACharacter.mass + "</p>");
                 $('#charB').html("<span class='card-title'>" + playBCharacter.name + "</span><p>Birth Year: " + playBCharacter.birth_year + "</p><p>Height: " + playBCharacter.height + "</p><p>Mass: " + playBCharacter.mass + "</p>");
 
+                //convert atrribute (birth year) to int
+                if (isNaN(parseInt(playACharacter.birth_year))) {
+                    playACharacter.birth_year = 0;
+                }
+                if (isNaN(parseInt(playBCharacter.birth_year))) {
+                    playACharacter.birth_year = 0;
+                }
 
                 $('#birthYear').on('click', function () {
                     compareAttributes(playACharacter.birth_year, playBCharacter.birth_year);
